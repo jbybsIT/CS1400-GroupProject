@@ -3,12 +3,10 @@ public class Calculate
    static UserInput dataInput = new UserInput();
    static double BMR;
    static double calorie;
-   
    public void calculateReturn()
    {
       output();
    }
-   
    
    private void output()
    {
@@ -18,6 +16,7 @@ public class Calculate
    
    private void calculate()
    {
+      UserInput dataInput = new UserInput();
    if (dataInput.getGender() == 'M')
    {
       maleBMR();

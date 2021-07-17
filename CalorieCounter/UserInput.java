@@ -32,7 +32,7 @@ public class UserInput
       activity = userActivity;
    }
    // getters
-   public char getGender(char userGender)
+   public char getGender()
    {
       return gender;
    }
@@ -41,15 +41,15 @@ public class UserInput
       return weight;
    }
    
-   public int getHeight()
+   public double getHeight()
    {
       return height;
    }
-   public int getAge()
+   public double getAge()
    {
       return age;
    }
-   public int getActivity()
+   public double getActivity()
    {
       return activity;
    }
