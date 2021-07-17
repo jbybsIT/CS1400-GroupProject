@@ -1,13 +1,13 @@
 public class UserInput
 {
    // variable initalization
-   String gender;
-   double weight;
-   int height;
-   int age;
-   int activity;
+   static char gender;
+   static double weight;
+   static int height;
+   static int age;
+   static int activity;
    // setters
-   public void setGender(String userGender)
+   public void setGender(char userGender)
    {
       gender = userGender;
    }
@@ -32,7 +32,7 @@ public class UserInput
       activity = userActivity;
    }
    // getters
-   public String getGender()
+   public char getGender(char userGender)
    {
       return gender;
    }
@@ -41,15 +41,15 @@ public class UserInput
       return weight;
    }
    
-   public double getHeight()
+   public int getHeight()
    {
       return height;
    }
-   public double getAge()
+   public int getAge()
    {
       return age;
    }
-   public double getActivity()
+   public int getActivity()
    {
       return activity;
    }

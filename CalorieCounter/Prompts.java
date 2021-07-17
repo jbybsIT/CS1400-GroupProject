@@ -13,7 +13,7 @@ public class Prompts
       System.out.print("What is your name?: ");
       String name = input.nextLine();
       System.out.print("What is your gender? (M or F): ");
-      String userGender = input.nextLine();
+      char userGender = input.next().charAt(0);
       System.out.printf("What is your weight in lbs?: ");
       double userWeight = input.nextInt();
       System.out.printf("What is your height in inches?: ");
@@ -29,6 +29,9 @@ public class Prompts
       userData.setHeight(userHeight);
       userData.setAge(userAge);
       userData.setActivity(selection);
+      
+      // output 
+     // System.out.println(
       
    }
    
