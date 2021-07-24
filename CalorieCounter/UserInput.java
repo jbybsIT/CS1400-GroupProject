@@ -6,7 +6,12 @@ public class UserInput
    static int height;
    static int age;
    static int activity;
+   static String name;
    // setters
+   public void setName(String userName)
+   {
+      name = userName;
+   }
    public void setGender(char userGender)
    {
       gender = userGender;
@@ -32,6 +37,10 @@ public class UserInput
       activity = userActivity;
    }
    // getters
+   public String getName()
+   {
+      return name;
+   }
    public char getGender()
    {
       return gender;

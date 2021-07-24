@@ -11,7 +11,7 @@ public class Prompts
       Scanner input = new Scanner(System.in);
       
       System.out.print("What is your name?: ");
-      String name = input.nextLine();
+      String userName = input.nextLine();
       System.out.print("What is your gender? (M or F): ");
       char userGender = input.next().charAt(0);
       System.out.printf("What is your weight in lbs?: ");
@@ -24,6 +24,7 @@ public class Prompts
       activitySelection();
       
       // sends input to userInput class to be calculated
+      userData.setName(userName);
       userData.setGender(userGender);
       userData.setWeight(userWeight);
       userData.setHeight(userHeight);

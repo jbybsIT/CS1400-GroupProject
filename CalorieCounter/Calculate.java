@@ -9,8 +9,6 @@ public class Calculate
       output();
    }
    
-   
-   
    public void calculate()
    {
       if (dataInput.getGender() == 'M' || dataInput.getGender() == 'm')
@@ -54,7 +52,12 @@ public class Calculate
    
    public void output()
    {
-      calculate();  
-      System.out.printf("%n%nYour daily caloric needs are: %.0f", calorie);
+     calculate();  
+     System.out.printf("%n%nYour daily caloric needs are: %.0f%n", calorie);
+   }
+   
+   public float getCalorie()
+   {
+      return calorie;
    }
 }
