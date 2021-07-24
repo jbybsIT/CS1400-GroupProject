@@ -56,7 +56,7 @@ public class Calculate
      System.out.printf("%n%nYour daily caloric needs are: %.0f%n", calorie);
    }
    
-   public float getCalorie()
+   public double getCalorie()
    {
       return calorie;
    }
