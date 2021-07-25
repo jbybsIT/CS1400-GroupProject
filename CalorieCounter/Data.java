@@ -26,7 +26,7 @@ public class Data
    {
       // format decimal
       String str = String.format("%.0f", calories[i]);
-      System.out.printf("%-12s %15s", names[i], str);
+      System.out.printf("%-12s %10s Cal/day", names[i], str);
       System.out.println();
    }
 }

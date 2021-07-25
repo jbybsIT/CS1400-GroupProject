@@ -40,8 +40,8 @@ public class App
             System.out.println();   
          }
       // builds table header   
-      System.out.printf("%-12s %15s%n", "Name", "Caloric Needs");
-      System.out.println("============================");
+      System.out.printf("%-12s %18s%n", "Name", "Caloric Needs");
+      System.out.println("===============================");
       for(int j = 0; j < people; j++)
          { 
             // calls array output tables
