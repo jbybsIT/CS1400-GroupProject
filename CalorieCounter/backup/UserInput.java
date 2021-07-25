@@ -1,9 +1,8 @@
-// Class declaration
 public class UserInput
 {
    // variable initalization
    static char gender;
-   static int weight;
+   static double weight;
    static int height;
    static int age;
    static int activity;
@@ -15,32 +14,26 @@ public class UserInput
    }
    public void setGender(char userGender)
    {
-   // Input must be M, m, F, or f. Sets gender
-   if(userGender == 'M' || userGender == 'm' || userGender == 'F' || userGender == 'f')
       gender = userGender;
    }
-   public void setWeight(int userWeight)
+   public void setWeight(double userWeight)
    {
-   // if the users weight is more than 0 the program will continue
       if(userWeight >= 0)
       weight = userWeight;
    } 
    public void setHeight(int userHeight)
    {
-   // if the users height is more than 0 the program will continue
       if(userHeight >= 0)
       height = userHeight;
    }
    public void setAge(int userAge)
    {
-   // if the users age is more than 0 the program will continue
       if(userAge >= 0)
       age = userAge;
    }
    public void setActivity(int userActivity)
    {
-   // if the users weight is between 1 and 3 the program will continue
-      if(userActivity > 0 && userActivity <= 3)
+      if(userActivity > 0 || userActivity <= 3)
       activity = userActivity;
    }
    // getters
@@ -52,20 +45,20 @@ public class UserInput
    {
       return gender;
    }
-   public int getWeight()
+   public double getWeight()
    {
       return weight;
    }
    
-   public int getHeight()
+   public double getHeight()
    {
       return height;
    }
-   public int getAge()
+   public double getAge()
    {
       return age;
    }
-   public int getActivity()
+   public double getActivity()
    {
       return activity;
    }

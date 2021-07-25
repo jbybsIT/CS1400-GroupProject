@@ -1,41 +1,32 @@
+// Import java arrays
 import java.util.Arrays;
-
+// Class declaration
 public class Data
 {
-   App build = new App();
+   // Initialize constructors
    UserInput dataInput = new UserInput();
    Calculate getCalorie = new Calculate();
-  // double[] calories = double[10];
-  // String[] names = String[10];
-   
-  /* public void arrayNames()
-   {
-      
-   }*/
-   static String[] names = new String[10];
-   static double[] calories = new double[10];
-   
-  /* public void main(String[] args)
-   {
-      arrayNames(3);
-      
-   }*/
+   // build arrays
+   static String[] names = new String[5];
+   static double[] calories = new double[5];
+   // Set name array based on names passed in userInput
    public void setArrayNames(int i)
    {     
-        names[i] = dataInput.getName();   
+      names[i] = dataInput.getName();   
    }
-   public void getArrayCalories(int i)
+   // set caloric array based on calculated in calculate
+   public void setArrayCalories(int i)
    {
-     for(int j = 0; j < i; j++)
-     {     
-        calories[j] = getCalorie.getCalorie();
-     }
+     getCalorie.calculateCalorie(); // ensures calorie is calculated
+     calories[i] = getCalorie.getCalorie();
    
    }
+   // Output getter
    public void getOutput(int i)
    {
-      System.out.printf("%-2s %5s", names[i], calories[i]);
+      // format decimal
+      String str = String.format("%.0f", calories[i]);
+      System.out.printf("%-12s %15s", names[i], str);
       System.out.println();
-      //System.out.println(names[i]);
    }
 }
